@@ -9,14 +9,14 @@ body {
 }
 
 #frmMenu {
-    width: 400px;
+    width: 600px;
     height: 200px;
 }
 
 #totalPrice {
     width: 200px;
     height: 190px;
-    margin: 0 auto;
+    margin: 20px auto;
     float: right;
 }
 
@@ -24,6 +24,12 @@ body {
     width: 200px;
     height: 200px;
     float: left;
+}
+
+.center {
+	width: 200px;
+	height: 200px;
+	float:left;
 }
 
 .right {
@@ -50,19 +56,22 @@ body {
     margin: 10px 0px 20px 100px;
     width: 100px;
     height: 40px;
+	display: block;
+	margin: 25px auto;
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Helvetica;
     color: white;
+	text-align: center;
 }
 
 h3 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial;
     color: white;
 }
 
 div {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Monospace;
     color: white;
 }
