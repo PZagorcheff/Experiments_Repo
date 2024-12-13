@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+       
+	<script>
+	   $(document).ready(function() {
+			$("html").append(
+			"<body>\
+				<div id='container'>\
+					<div id='inner'>\
+						<h1>Basic jQuery</h1>\
+						<p>Paragraph 1</p>\
+					</div>\
+				</div>\
+			</body>"
+			);
+			$("p").click(function() {   					//Target is <p> tag
+				console.log( "You clicked a paragraph!" );	//Message in the browser console
+			});
+	   });
+	</script>
+</html>
