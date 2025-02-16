@@ -1,0 +1,472 @@
+/***** GENERAL STYLING *****/
+
+/*Affects entire document */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    opacity: 1;
+    transition: 3s opacity;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+body.fade-out {
+    opacity: .1;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 0.8%;
+    color: #1a1a1a; 
+}
+
+h1:hover {
+    filter: grayscale(5%);
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 3%; 
+    color: #1a1a1a; 
+}
+
+.h2_social {
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 0.5%; 
+    color: #1a1a1a; 
+}
+
+h2:hover {
+    filter: grayscale(5%);
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+/* Styling for Portfolio Title Text */
+.white-text {
+    color: #fff;
+    padding-top: 10vh;
+}
+
+p {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: justify; 
+    letter-spacing: .1vw;
+    font-size: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+p:hover {
+    transition: transform 1s;
+	transform: scale(1.01);
+}
+
+.center {
+    text-align: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+a {
+    color: rgb(16, 16, 19);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+q {
+    font-style: italic;
+}
+
+img {
+    filter: grayscale(75%);
+    max-width: 95%; 
+    max-height: 95%;
+    display: block;
+    margin: 10px auto auto auto;
+}
+
+img:hover {
+	filter: grayscale(5%);
+    transition: transform 1s;
+	transform: scale(1.05);
+}
+
+.img_portfolio {
+    filter: grayscale(100%);
+    max-width: 95%; 
+    max-height: 95%;
+    display: block;
+    margin: 45px auto auto auto;
+}
+
+.img_portfolio:hover {
+	filter: grayscale(5%);
+    transition: transform 1s;
+	transform: scale(1.03);
+}
+
+footer {
+    padding: 2%;
+    background-color: white;
+}
+/***** END OF GENERAL STYLING *****/
+
+/***** NAVBAR STYLING *****/
+.Navbar {
+    overflow: hidden;
+    background-color: rgb(9, 9, 63);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+.Navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: .75vw 1vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Avant Garde, Helvetica;
+    font-size: 1.5vw;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 4s;
+    animation: moveNavText 4s; 
+}
+
+
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+.Navbar a:hover {
+    background-color: #f4f4f4;
+    color: black;
+    border: #f4f4f4 solid 2px;}
+
+.Navbar a.active {
+    background-color: darkgray;
+    text-decoration: none;
+    border: #f4f4f4 solid 2px;
+    
+}
+/***** END OF NAVBAR STYLING *****/
+
+/***** VIDEO STYLING *****/
+#Typing_Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+    #Typing_Video {
+        display: none;
+    }
+}
+
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+/***** END OF VIDEO STYLING *****/
+
+/***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
+* {
+    box-sizing: border-box;
+} 
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 1.6%;
+    height: 450px;
+    background-color: #f2f2f2;
+    border-radius: 3%;
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 1.6%;
+    height: 450px;
+    background-color: rgb(9, 9, 63);
+    border-radius: 3%;
+}
+
+.Column_Portfolio_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 550px;
+    background-color: #f2f2f2;
+    border-radius: 3%;
+}
+
+.Column_Portfolio_1 p {
+    font-size: 1vw;
+}
+
+.Column_Portfolio_2 {
+    float: left;
+    width: 50%;
+    /*padding: 10px;
+    padding-top: 6%;*/
+    height: 550px;
+    background-color: rgb(9, 9, 63);
+    border-radius: 3%;
+}
+
+.Row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/***** END OF TABLE STYLING *****/
+
+/***** SOCIAL NETWORKS *****/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 15%;
+    filter: saturate(10%);
+  }
+  
+  .fa:hover {
+      opacity: 1;
+      filter: saturate(100%);
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    width:40px; 
+    height:40px;
+  }
+  
+  .fa-square-x-twitter {
+    background: #55ACEE;
+    color: white;
+    width:40px; 
+    height:40px;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    width:40px; 
+    height:40px;
+  }
+  
+  .fa-instagram {
+        width:40px; 
+        height:40px;
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        }
+    
+    .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    width:40px; 
+    height:40px;
+  }
+
+  .fa-github {
+    background: #000000;
+    color: white;
+    width:40px; 
+    height:40px;
+  }
+  /***** END OF SOCIAL NETWORKS *****/
+
+/***** START OF PORTFOLIO PAGES *****/
+/*** Start of SUB-NAVBAR apperience ***/
+.Sub-Navbar {
+    overflow: hidden;
+    background-color: rgb(9, 9, 63);
+    position: relative;
+    top: 60px;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+    .Sub-Navbar a:hover {
+        background-color: rgb(170, 168, 168);
+        color: black;
+        font-weight: bold;
+    }
+
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+.Sub-Navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Avant Garde, Helvetica;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5s;
+    animation: moveNavText 5s;
+}
+
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+.Sub-Navbar a:hover {
+    background-color: darkgray;
+    color: black;
+    font-weight: bold;
+}
+
+.Sub-Navbar a.active {
+    background-color: darkgray;
+    text-decoration: none;
+}
+/***** End of SUB-NAVBAR apperience *****/
+
+/***** Start of SUB NAVBAR EQUAL WIDTH MENU *****/
+.navbar-equal-width-menu {
+width: 100%;
+background-color: rgb(9, 9, 63);
+overflow: auto;
+}
+
+.navbar-equal-width-menu a {
+float: left;
+padding: 12px;
+color: white;
+text-decoration: none;
+font-size: 17px;
+width: 25%;
+text-align: center;
+}
+
+.navbar-equal-width-menu a:hover {
+background-color: white;
+}
+
+.navbar-equal-width-menu a.back_home:hover {
+    background-color: darkgrey;
+}
+
+.navbar-equal-width-menu a.active {
+background-color: rgb(217, 217, 219);
+color: black;
+}
+/***** End of SUB NAVBAR EQUAL WIDTH MENU *****/
+
+.launch_button {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 18px;
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 200px;
+}
+
+.launch_button:hover {
+    transition: transform 1s;
+	transform: scale(1.01);
+}
+
+.tech_images {
+    display:inline-flex;
+}
+.tech_images_items {
+    height: 30px;
+    width: 30px;
+    margin: 6px;
+}
+ /***** END OF PORTFOLIO PAGES *****/
+
+ /***** START OF STACK PAGE *****/
+ hr {
+    background: darkgrey;
+    padding-bottom: 2px;
+ }
+ .stack_section {
+    background: rgba(0, 0, 0, 0.2);
+    text-align: left;
+    padding-top: 30px;;
+ }
+
+ .p_progressbar {
+    color: white;
+    text-transform: uppercase;
+ }
+
+ .h2_progressbar {
+    color: white;
+    text-transform: uppercase;
+ }
+  /***** END OF STACK PAGE *****/

@@ -1,0 +1,196 @@
+
+@media screen and (max-width: 527px) {
+    p {
+        font-size: 2.77vw;
+    }
+
+    h1 {
+        font-size: 4.0vw;
+    }
+    
+    .Column_1 {
+        height: 740px;
+    }
+
+    .Column_2 {
+        height: 740px;
+    }
+
+    .Column_Portfolio_1 {
+        height: 400px;
+    }
+
+    .Column_Portfolio_2 {
+        height: 400px;
+    }
+
+    .Column_Portfolio_1 h1 {
+        font-size: 4.0vw;
+    }
+
+    .Column_Portfolio_1 h2 {
+        font-size: 3.5vw;
+    }
+
+    .Column_Portfolio_1 p {
+        font-size: 2.50vw;
+    }
+
+    .img_portfolio {
+        margin: 170px auto auto auto;
+    }
+}
+
+@media screen and (min-width: 528px) and (max-width: 1050px) {
+    p {
+        font-size: 1.50vw;
+    }
+
+    h1 {
+        font-size: 2.5vw;
+    }
+    
+    .Column_1 {
+        height: 400px;
+    }
+
+    .Column_2 {
+        height: 400px;
+    }
+
+    .Column_Portfolio_1 {
+        height: 450px;
+    }
+
+    .Column_Portfolio_2 {
+        height: 450px;
+    }
+
+    .Column_Portfolio_1 h1 {
+        font-size: 2.5vw;
+    }
+
+    .Column_Portfolio_1 h2 {
+        font-size: 2.0vw;
+    }
+
+    .Column_Portfolio_1 p {
+        font-size: 1.50vw;
+    }
+
+    .img_portfolio {
+        margin: 90px auto auto auto;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 2269px) {
+    p {
+        font-size: 1.0vw;
+    }
+
+    h1 {
+        font-size: 1.5vw;
+    }
+    
+    .Column_1 {
+        height: 550px;
+    }
+
+    .Column_2 {
+        height: 550px;
+    }
+
+    .Column_Portfolio_1 {
+        height: 450px;
+        padding: 30px 0 0 0;
+    }
+
+    .Column_Portfolio_2 {
+        height: 450px;
+    }
+
+    .Column_Portfolio_1 h1 {
+        font-size: 1.5vw;
+    }
+
+    .Column_Portfolio_1 h2 {
+        font-size: 1.0vw;
+    }
+
+    .Column_Portfolio_1 p {
+        font-size: 0.9vw;
+    }
+
+    .img_portfolio {
+        margin: 10px auto auto auto; /* This centers all images */
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 2270px) {
+    p {
+        font-size: 0.9vw;
+    }
+
+    h1 {
+        font-size: 1.5vw;
+    }
+    
+    .Column_1 {
+        height: 550px;
+    }
+
+    .Column_2 {
+        height: 550px;
+    }
+
+    .Column_Portfolio_1 {
+        height: 450px;
+        padding: 30px 0 0 0;
+    }
+
+    .Column_Portfolio_2 {
+        height: 450px;
+    }
+
+    .Column_Portfolio_1 h1 {
+        font-size: 1.5vw;
+    }
+
+    .Column_Portfolio_1 h2 {
+        font-size: 1.0vw;
+    }
+
+    .Column_Portfolio_1 p {
+        font-size: 0.9vw;
+    }
+
+    .img_portfolio {
+        margin: 10px auto auto auto; /* This centers all images */
+        padding: 20px;
+    }
+}
+
+/*Media rule for navbar links for different screen sizes*/
+@media screen and (max-width: 1080px) {
+    .Navbar a{
+        width: 20%;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-equal-width-menu a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    }
+
+@media screen and (max-width: 576px) {
+    .Sub-Navbar a{
+        width: 25%;
+        font-size: 12px;
+    }
+}

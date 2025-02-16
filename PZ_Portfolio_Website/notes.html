@@ -1,0 +1,76 @@
+<!--Contact section 2  -->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2">
+                <img class="Contact_img" src="images/html_custom.png" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/xjvnjoyl" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SEND">
+                </form>
+                <hr>
+                <div class="center">
+                    <h2>Social network</h2>
+                    <a href="https://www.facebook.com/peter.zagorchev" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/Zagorcheff" class="fa fa-twitter"></a>
+                    <a href="https://bg.linkedin.com/in/pzagorchev" class="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/Zagorcheffff/" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+
+        /***** CONTACT FORM STYLING *****/
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset;
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2; 
+    padding: 10px;
+    font-family: "Trebuchet MS", Optima;
+}
+/***** END OF CONTACT FORM STYLING *****/

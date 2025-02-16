@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PZ Web. | Diplomas</title>
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet/responsive.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet/contact_form_style.css">
+    </head>
+    <body class="Background">
+            
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="index.html">PZ Web.</a>
+            <a href="index.html">Portfolio.</a>
+            <a href="index.html">About.</a>
+            <a onclick="openForm()">Say Hi!</a>
+        </div>
+
+    <!--Fixed menu-->
+        <div class="Sub-Navbar">
+            <div class="navbar-equal-width-menu">
+                <a href="portfolio_tech_stack.html">Tech stack.</a>
+                <a href="portfolio_life_projects.html">Real-life projects.</a>
+                <a href="portfolio_archived.html">Archived.</a>
+                <a class="active" href="portfolio_diplomas.html">Diplomas.</a>
+            </div>
+        </div>
+        <!--End of Fixed menu-->
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/video/Typing_1.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Petar Zagorchev's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Patience is a key element of success.</q>
+                    <br>
+                    <q>Software is a great combination between artistry and engineering.</q>
+                    <br>
+                    <q>I am not in competition with anyone but myself. My goal is to improve myself continuously.</q>
+                    <br>-Bill Gates
+                    <br>
+                    <q>Clean code always looks like it was written by someone who cares.</q>
+                    <br>
+                    <q>Honesty in small things is not a small thing.</q>
+                    <br> -Robert C. Martin
+                </p>
+            </strong>
+        </div>
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2">
+                <img class="Contact_img" src="images/construction.jpg" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Diplomas</h1>
+                <p>This page is UNDER CONSTRUCTION. Untill it get done you are more than welcome to get in touch with me via the contact form <a onclick="openForm()">down below</a>.</p>
+            </div>
+        </div>
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">SAY HI!</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/mzzdzbkp" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email chosen -->
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+        
+                    <button type="submit" class="btn">SEND</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE POPUP</button>
+                </form>
+            </div>
+        </div>
+        <!--Footer section-->
+        <footer>      
+            <div>
+                <p class="center">2025 &copy All rights reserved | <a href="index.html" target="_blank" class="wpdna-brand">Site by Petar Zagorchev</a></p>
+            </div> 
+        </footer>
+        <script src="js/portfolio.js"></script>
+    </body>
+</html>
